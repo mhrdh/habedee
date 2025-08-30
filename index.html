@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Selamat Ulang Tahun!</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <canvas class="confetti-canvas" id="confetti"></canvas>
+  
+  <div class="card" role="main">
+    <div class="left">
+      <!-- FOTO -->
+      <img id="photo" class="photo" src="Photo.JPG/Personal-pose-homestudio-4.jpg" alt="Foto ulang tahun">
+    </div>
+
+    <div class="right">
+      <h1>Selamat Ulang Tahun!</h1>
+      <div class="name" id="toName">Agnes Eillina Ayu Cahyanimgrum</div>
+      <p class="message" id="messageText">
+        Semoga harimu selalu ceria, penuh tawa, dan bahagia.  
+        Semoga juga semua harapanmu jadi kenyataan.
+      </p>
+      <button id="playBtn" class="btn">▶ Play Musik</button>
+    </div>
+  </div>
+
+  <!-- MUSIK -->
+  <audio id="bgAudio" src="song.mp3/happy-birthday-334876.mp3" preload="auto" loop></audio>
+
+  <script>
+    const playBtn = document.getElementById("playBtn");
+    const bgAudio = document.getElementById("bgAudio");
+
+    playBtn.addEventListener("click", () => {
+      bgAudio.play();
+    });
+  </script>
+
+  <script src="script.js"></script>
+</body>
+</html>
